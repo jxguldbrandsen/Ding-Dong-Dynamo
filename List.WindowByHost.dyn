@@ -1,0 +1,44 @@
+<Workspace Version="0.8.1.1942" X="171.703570659174" Y="78.2065043824242" zoom="0.647174757064284" Name="Home" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <DSRevitNodesUI.Categories guid="b9e4b5a9-2b8c-43ce-9832-4cd31ed75bc3" type="DSRevitNodesUI.Categories" nickname="Categories" x="-51.6526747779113" y="57.1277290367577" isVisible="true" isUpstreamVisible="true" lacing="Disabled" index="892:Windows" />
+    <DSRevitNodesUI.ElementsOfCategory guid="1ae95155-5c64-4cdc-9274-f25f30f0aeeb" type="DSRevitNodesUI.ElementsOfCategory" nickname="All Elements of Category" x="201.306604406906" y="60.7551124482671" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <Dynamo.Nodes.DSFunction guid="bbca3a05-f97b-4b09-8535-f03fe1b2a1d0" type="Dynamo.Nodes.DSFunction" nickname="GroupByKey" x="490.694006294278" y="57.6401491450293" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="" function="GroupByKey@var[]..[],_FunctionObject" />
+    <Dynamo.Nodes.Function guid="1d95884e-3724-4cca-991e-5c1fcbe3c665" type="Dynamo.Nodes.Function" nickname="Element.Host" x="200.10695079025" y="165.43855266942" isVisible="true" isUpstreamVisible="true" lacing="Shortest">
+      <ID value="73663744-6035-41f3-b386-e6f91e0b36fe" />
+      <Name value="Element.Host" />
+      <Description value="Gets an element's host" />
+      <Inputs>
+        <Input value="Element(s)" />
+      </Inputs>
+      <Outputs>
+        <Output value="Host(s)" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.DSFunction guid="604fdacf-1907-44a0-acfd-41fb5aa41b56" type="Dynamo.Nodes.DSFunction" nickname="List.FirstItem" x="802.44619400805" y="53.3740543726906" isVisible="true" isUpstreamVisible="true" lacing="Longest" assembly="DSCoreNodes.dll" function="DSCore.List.FirstItem@var[]..[]" />
+    <Dynamo.Nodes.Function guid="e8eb3617-1ecf-4605-924a-b66dbcbeb2e2" type="Dynamo.Nodes.Function" nickname="Element.Host" x="1050.94852455825" y="51.2857994941175" isVisible="true" isUpstreamVisible="true" lacing="Longest">
+      <ID value="73663744-6035-41f3-b386-e6f91e0b36fe" />
+      <Name value="Element.Host" />
+      <Description value="Gets an element's host" />
+      <Inputs>
+        <Input value="Element(s)" />
+      </Inputs>
+      <Outputs>
+        <Output value="Host(s)" />
+      </Outputs>
+    </Dynamo.Nodes.Function>
+    <Dynamo.Nodes.DSFunction guid="b1a21360-ac0b-44a7-8ed2-a286cce5adda" type="Dynamo.Nodes.DSFunction" nickname="Count" x="817.063978158061" y="296.089311717314" isVisible="true" isUpstreamVisible="true" lacing="Longest" assembly="" function="Count@var[]..[]" />
+    <Dynamo.Nodes.DSFunction guid="adfa6f4b-f590-4b45-a2f6-e71dd02f11f8" type="Dynamo.Nodes.DSFunction" nickname="WallType.Name" x="1264.48378669624" y="47.4289694837568" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="RevitNodes.dll" function="Revit.Elements.WallType.Name" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="b9e4b5a9-2b8c-43ce-9832-4cd31ed75bc3" start_index="0" end="1ae95155-5c64-4cdc-9274-f25f30f0aeeb" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="1ae95155-5c64-4cdc-9274-f25f30f0aeeb" start_index="0" end="bbca3a05-f97b-4b09-8535-f03fe1b2a1d0" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="bbca3a05-f97b-4b09-8535-f03fe1b2a1d0" start_index="0" end="604fdacf-1907-44a0-acfd-41fb5aa41b56" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="bbca3a05-f97b-4b09-8535-f03fe1b2a1d0" start_index="0" end="b1a21360-ac0b-44a7-8ed2-a286cce5adda" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="1d95884e-3724-4cca-991e-5c1fcbe3c665" start_index="0" end="bbca3a05-f97b-4b09-8535-f03fe1b2a1d0" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="604fdacf-1907-44a0-acfd-41fb5aa41b56" start_index="0" end="e8eb3617-1ecf-4605-924a-b66dbcbeb2e2" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="e8eb3617-1ecf-4605-924a-b66dbcbeb2e2" start_index="0" end="adfa6f4b-f590-4b45-a2f6-e71dd02f11f8" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+</Workspace>
